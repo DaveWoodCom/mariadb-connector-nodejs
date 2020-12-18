@@ -346,7 +346,9 @@ export interface PoolConfig extends ConnectionConfig {
   idleTimeout?: number;
 
   /**
-   * Timeout after which pool give up creating new connection.
+   * Timeout after which the pool gives up creating a new connection.
+   * In milliseconds
+   * Default: 30000 ( = 30 seconds00)
    */
   initializationTimeout?: number;
 
